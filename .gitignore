@@ -1,0 +1,7 @@
+# ignore some files that are not needed in the repository
+
+# Ignore the .vscode folder
+.vscode/
+
+# Ignore all .exe files
+*.exe
