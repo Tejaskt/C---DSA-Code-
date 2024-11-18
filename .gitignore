@@ -5,3 +5,5 @@
 
 # Ignore all .exe files
 *.exe
+first.c
+second.c

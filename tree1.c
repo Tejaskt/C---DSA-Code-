@@ -20,14 +20,17 @@ void insert(int index,int data){
         return;
     }
     else{
-        if(data<arr[index]){
+        if(arr[index] <= -1){
+            arr[index] = data;
+        }
+        else if(data<arr[index]){
             // if the data is smaller than root then it will be stored on the left side of the root
             insert((2*index)+1, data);
         }else{
             // if the data is greater than root then it will be stored on the right side of the root
             insert((2*index)+2, data);
         }
-    } 
+    }
 }
 
 // we need other create function because index of the element will be given using insert function
@@ -66,6 +69,6 @@ int main()
     create(5);
     create(8);
     create(3);
-    print();    
+    print();
     return 0;
 }
